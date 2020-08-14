@@ -1,0 +1,26 @@
+﻿@model List<Homework5_18024361.ViewModels.Product>
+@using Homework5_18024361.ViewModels
+
+<div>
+    <table class="table table-responsive">
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Product Type</th>
+        </tr>
+        @foreach(Product product in Model)
+        {
+    <tr>
+        <td>@product.ID</td>
+        <td>@product.Description</td>
+        <td>@product.Price</td>
+        <td>@product.Quantity</td>
+        <td>@product.ProductType</td>
+        <td></td>
+    </tr>
+        }
+    </table>
+</div>
+
